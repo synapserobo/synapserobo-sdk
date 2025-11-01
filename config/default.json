@@ -1,0 +1,49 @@
+
+{
+  "solana": {
+    "network": "devnet",
+    "commitment": "confirmed",
+    "endpoint": "https://api.devnet.solana.com",
+    "maxRetries": 3,
+    "retryDelay": 1000,
+    "confirmTimeout": 30000,
+    "simulationMode": false,
+    "microPaymentEnabled": true,
+    "paymentRecipient": null,
+    "paymentAmount": 0.001
+  },
+  "ai": {
+    "model": "LOCAL_LLM",
+    "temperature": 0.7,
+    "maxTokens": 1000,
+    "timeout": 30000,
+    "contextWindow": 8192
+  },
+  "robot": {
+    "simulation": true,
+    "maxVelocity": 0.3,
+    "safetyEnabled": true,
+    "balanceEnabled": true,
+    "humanoid": {
+      "height": 1.75,
+      "armLength": 0.7,
+      "legLength": 0.85,
+      "maxStepHeight": 0.15
+    }
+  },
+  "task": {
+    "maxConcurrentTasks": 3,
+    "defaultPriority": 50,
+    "idleTimeout": 300000,
+    "cleanupInterval": 3600000,
+    "aiOverrideEnabled": true,
+    "schedulingEnabled": true
+  },
+  "logging": {
+    "level": "info",
+    "transports": ["console", "file"],
+    "filePath": "./logs/sdk.log",
+    "maxSize": "10m",
+    "maxFiles": 5
+  }
+}

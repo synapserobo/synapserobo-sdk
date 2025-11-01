@@ -1,0 +1,96 @@
+
+
+# ─────────────────────────────────────────────
+# Node Package Artifacts
+# ─────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+package-lock.json
+yarn.lock
+.pnpm-store/
+
+# ─────────────────────────────────────────────
+# Build Outputs / Bundles
+# ─────────────────────────────────────────────
+dist/
+build/
+out/
+lib/
+*.tsbuildinfo
+
+# ─────────────────────────────────────────────
+# Local Environment & Secrets
+# ─────────────────────────────────────────────
+.env
+.env.*
+*.key
+*.pem
+*.cert
+secrets/
+credentials.json
+
+# ─────────────────────────────────────────────
+# Cache & Temp Files
+# ─────────────────────────────────────────────
+.cache/
+.temp/
+tmp/
+temp/
+coverage/
+.nyc_output/
+logs/
+*.pid
+*.seed
+
+# ─────────────────────────────────────────────
+# IDE / Editor Metadata
+# ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Allow recommended VSCode settings
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# ─────────────────────────────────────────────
+# OS System Files
+# ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─────────────────────────────────────────────
+# Simulation / Robotics Artifacts
+# ─────────────────────────────────────────────
+simulation_cache/
+unity_temp/
+gazebo_temp/
+isaac_sim_temp/
+
+# ─────────────────────────────────────────────
+# Testing / CI Output
+# ─────────────────────────────────────────────
+jest-coverage/
+mocha/
+reports/
+test-results.xml
+
+# ─────────────────────────────────────────────
+# Documentation Build Outputs
+# ─────────────────────────────────────────────
+docs/.cache/
+docs/dist/
+site/
+.docusaurus/
+
+# ─────────────────────────────────────────────
+# CLI / Binary Output
+# ─────────────────────────────────────────────
+cli-output/
+*.exe
+*.out
+*.bin
